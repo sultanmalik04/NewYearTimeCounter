@@ -11,7 +11,9 @@ function formatTime(time) {
 }
 
 function countDown() {
-    const newYearsDate = new Date(newYears);
+    const currentDate = new Date();
+    const nextYear = currentDate.getFullYear() + 1;
+    const newYearsDate = new Date(nextYear,0,1);
     const currentDate = new Date();
 
     const totalSeconds =  (newYearsDate - currentDate) / 1000;
