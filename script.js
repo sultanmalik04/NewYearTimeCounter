@@ -4,7 +4,7 @@ const minsEl = document.getElementById('mins');
 const seconsEl = document.getElementById('sec');
 
 
-const newYears = "1 jan 2022";
+const newYears = "1 jan 2025";
 
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
